@@ -1,5 +1,15 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+// Install react-router-dom
+
 function App() {
-  return <h2>React Router 6 Tutorial</h2>;
+  return (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<div>Home Page.</div>} />
+      <Route  path="testing" element={<h2>Hello There.</h2>} />
+    </Routes>
+  </BrowserRouter>);
 }
 
 export default App;
